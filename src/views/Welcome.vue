@@ -1,6 +1,4 @@
 <template>
-  <img src="../assets/logo.png" alt="Logo" class="logo" />
-
   <div class="welcome container">
     <p>Hoşgeldiniz</p>
     <div v-if="showLogin">
@@ -14,6 +12,9 @@
       <h2>Kayıt Ol</h2>
       <SignupForm @signup="enterHome"></SignupForm>
       <p>Zaten Üye Misin? <span @click="showLogin = true">Giriş</span></p>
+    </div>
+    <div>
+      <img src="../assets/logo.png" alt="Logo" class="logo" />
     </div>
   </div>
 </template>
